@@ -1,24 +1,26 @@
-import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-        //declarar  variaveis
-        int a;
-        int b;
-        //entrada de dados
-        Scanner obj; //declaração
-        obj = new Scanner(System.in); //construção
-        //processamento de dados
-
-        a = obj.nextInt();
-        //saida de dados
-        System.out.println("Entre com um número:");
-        //processamento
-        b = obj.nextInt();
-        //processamento
-        int soma = a+b;
-//saida
-        System.out.println(soma);
-        //saida de dados
-        System.out.println("Hello world!");
+        //Aula introdutiva de orientaçao á Objetos
+        //Declaraçao de objeto
+        Pessoa adao;
+        //instanciaçao do objeto
+        adao = new Pessoa();
+        // Ao mesmo tempo
+        Pessoa qualquer = new Pessoa();
+        // Definir Formato do objeto
+        qualquer.nome = "Rita";
+        qualquer.sobrenome = "Lee";
+        qualquer.falar();
+        System.out.println(qualquer.falar("oi"));
+        //criar novos objetos
+        //declarar objeto
+        Pessoa rainha;
+        //instanciar objetos
+        rainha =  new Pessoa();
+        rainha.nome = "Tina";
+        rainha.sobrenome = "Tunner";
+        //definiçao de comportamento
+        rainha.falar();
+        rainha.comer();
     }
 }
